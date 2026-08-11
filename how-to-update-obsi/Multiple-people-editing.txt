@@ -1,0 +1,32 @@
+Multiple people editing — making it ordered, trackable, reversible
+
+This is exactly what git is for. The pattern that keeps it clean:
+
+One branch + PR per addition, not direct pushes to main.
+
+bash
+git checkout -b add-prompt-engineering-course
+# ...add/edit files in Obsidian as normal...
+git add .
+git commit -m "Add Prompt Engineering course: exam + Chain of Thought, Few-Shot Prompting notes"
+git push -u origin add-prompt-engineering-course
+
+Then open a Pull Request on GitHub into main. Even solo, this gives you a clean diff to review before it merges; with two people, it prevents both of you editing the same concept note at the same time and silently overwriting each other.
+
+Why this solves each thing you asked for:
+
+Ordered — one PR = one logical addition (a course, or an edit to a concept). The git log becomes a readable history of "what got added when."
+Trackable — every PR/commit shows exactly which lines changed, and GitHub attributes it to whoever pushed it (as long as you're each using your own GitHub account/git config, not sharing one login).
+Editable — anyone can open a new branch, edit any note (including ones the other person wrote), and PR it in. Since concept notes are meant to be a shared pool, this is expected and normal.
+Reversible — this is the actual point of git. Any single commit or whole PR merge can be undone:
+git revert <commit-hash> — undoes one commit cleanly, keeps history (best default choice).
+On GitHub itself: open the merged PR → Revert button, which opens a new PR that undoes it.
+git log -- "Concepts/Delegation.md" shows the full edit history of just that one note if you want to see who changed what over time, or restore an old version of it specifically.
+
+A couple of light conventions worth agreeing on up front, since this is a shared PKM vault rather than code:
+
+Commit messages describe the content added, not just "update notes" — e.g. "Add Discernment for Code: five lenses (from lesson video)" rather than "edits".
+If you're filling in one of the From the lesson (fill in) placeholder sections, keep that as its own commit/PR separate from adding a whole new course — smaller diffs are easier to review and revert individually.
+Optional but nice: a CHANGELOG.md at the vault root where each PR adds one line — gives a human-readable timeline without having to read git log.
+
+Want me to add that .gitignore + a short README.md (vault structure + this workflow, so it's written down once instead of re-explained each time) to the files you already have?

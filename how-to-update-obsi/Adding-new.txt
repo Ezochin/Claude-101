@@ -1,0 +1,9 @@
+Adding a new course + exam
+
+Repeatable process each time:
+
+Drop the new exam into Exams/ — e.g. Exams/Prompt Engineering Interactive - Exam.md. Same format: questions, foldable answer key.
+Before writing new concept notes, check what already exists. Open Concepts/ (or use Obsidian's search) and check if the course re-covers something already in the vault — e.g. if a new course also touches "Projects" or "Delegation." If it does, just link to the existing note ([[Delegation]]) instead of making a duplicate. This is the whole point of the atomic-notes setup — the vault should get more connected over time, not more repetitive.
+Only make a new concept note for genuinely new atomic ideas from that course, following the same skeleton (Definition (verified) / From the lesson (fill in) / Related concepts / Appears in).
+Update the MOC — add the new exam under ## Exams, and any new concept notes under a new or existing ## Concepts — <course name> section.
+Commit it as one unit (see workflow below) — e.g. git commit -m "Add Prompt Engineering course notes".
