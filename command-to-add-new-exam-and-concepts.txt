@@ -1,0 +1,2 @@
+"Here's my existing Obsidian concept vault (files attached) and a new course [link]. Build a study exam for this course in the same format as my existing exams — questions + foldable answer key, feature/framework names as wikilinks. For each concept the course covers: if a matching concept note already exists in what I uploaded, link to it as-is, or propose an edit/addition to it if this course adds real information; only create a new concept note if it's genuinely not covered yet. Update the MOC to include the new exam and any new notes."
+

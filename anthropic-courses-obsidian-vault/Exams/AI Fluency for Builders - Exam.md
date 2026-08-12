@@ -33,7 +33,7 @@ C) Data, Decision, Direction, Diligence
 D) Delegation, Development, Discernment, Deployment
 
 **Q2.** Which competency is primarily about deciding *what work goes to a human, what goes to AI, and what the two do together*?
-A) Description
+A) Description 
 B) Discernment
 C) Delegation
 D) Diligence

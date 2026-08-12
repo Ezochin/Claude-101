@@ -1,6 +1,9 @@
 ---
-tags: [exam, claude-101]
-aliases: [Claude 101 Exam]
+tags:
+  - exam
+  - claude-101
+aliases:
+  - Claude 101 Exam
 ---
 
 # Claude 101 — Study Group Exam
